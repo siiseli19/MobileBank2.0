@@ -1,5 +1,5 @@
 #driver code for the application
-
+from functions import show_balance, show_payment_history
 
 from datetime import date
 
@@ -13,15 +13,9 @@ def user_interface():
 
     valinta = None
     while True:
+        print("Welcome to MobileBank")
         print("-------------------------------------------")
-        print("Tervetuloa kayttamaan mobiilipankkia!")
-        saldo()
-        print("VALITSE TOIMINTO:")
-        print("Tilisiirto -- S")
-        print("Tilitapahtumat -- T")
-        print("Hae lainaa -- H")
-        print("Poistu -- Q")
-        print("Seuraa kulutsta -- K")
+        show_balance()
         print("-------------------------------------------")
 
         try:
